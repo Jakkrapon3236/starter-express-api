@@ -2,16 +2,16 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql');
 const cors = require('cors');
-const PORT = 8080;
+const PORT = 2002;
 
 app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-    user: 'root',
-    host: 'localhost',
-    password: '',
-    database: 'casava_varities'
+    user: 'cmdkppco',
+    host: 'ftp.cmdkpp.com',
+    password: ':2Y08;r0VxVskS',
+    database: 'cmdkppco_tree'
 })
 
 app.post('/api/add', (req,res) => {
